@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1020;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+.hero {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1e3a8a, #0b1020 60%);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #93c5fd;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #dbeafe;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  padding: 0 60px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  background: #60a5fa;
+  color: #08101f;
+  text-decoration: none;
+  padding: 14px 26px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #3b82f6;
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #93c5fd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.card {
+  background: #121a30;
+  border: 1px solid #23304f;
+  border-radius: 18px;
+  padding: 24px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #60a5fa;
+}
+
+.card h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #cbd5e1;
+}
+
+.contact-box {
+  margin-top: 24px;
+  background: #121a30;
+  border: 1px solid #23304f;
+  border-radius: 18px;
+  padding: 24px;
+  max-width: 420px;
+}
+
+.contact-box a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid #1f2a44;
+  text-align: center;
+  padding: 24px;
+  color: #94a3b8;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+  }
+
+  .hero-content {
+    padding: 0 24px 60px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
